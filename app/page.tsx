@@ -20,13 +20,13 @@ const platforms = [
     id: 'paypal',
     name: 'PayPal',
     slug: 'paypal',
-    features: ['Invoice', 'International'],
+    features: ['International', 'Invoice'],
   },
   {
     id: 'stripe',
     name: 'Stripe',
     slug: 'stripe',
-    features: ['Subscription', 'International', 'In-Person', 'Invoice'],
+    features: ['In-Person', 'International', 'Subscription', 'Invoice'],
   },
   {
     id: 'square',
@@ -38,13 +38,13 @@ const platforms = [
     id: 'adyen',
     name: 'Adyen',
     slug: 'adyen',
-    features: ['International', 'Card / APM', 'Marketplace'],
+    features: ['Card / APM', 'International', 'Marketplace'],
   },
   {
     id: 'braintree',
     name: 'Braintree',
     slug: 'braintree',
-    features: ['Subscription', 'PayPal', 'Venmo', 'Marketplace'],
+    features: ['PayPal', 'Venmo', 'Subscription', 'Marketplace'],
   },
   {
     id: 'authorize-net',
