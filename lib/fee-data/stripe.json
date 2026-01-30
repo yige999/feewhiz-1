@@ -1,0 +1,40 @@
+{
+  "platform": "stripe",
+  "name": "Stripe",
+  "source_url": "https://stripe.com/pricing",
+  "last_checked": "2025-01-29",
+  "base_currency": "USD",
+  "fees": {
+    "domestic": {
+      "standard": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "online": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "in_person": { "rate": 0.027, "fixed": 0.05, "type": "percentage_plus_fixed" },
+      "ach": { "rate": 0.008, "fixed": 0, "type": "percentage_only", "cap": 5.0 },
+      "link": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "link_bank": { "rate": 0.026, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "klarna": { "rate": 0.0599, "fixed": 0.30, "type": "percentage_plus_fixed" }
+    },
+    "international": {
+      "standard": { "rate": 0.044, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "additional_fee": { "rate": 0.015, "fixed": 0, "type": "percentage_only" },
+      "currency_conversion": { "rate": 0.01, "fixed": 0, "type": "percentage_only" }
+    }
+  },
+  "transaction_types": [
+    { "id": "online", "name": "Online Payment" },
+    { "id": "in-person", "name": "In-Person (Terminal)" },
+    { "id": "subscription", "name": "Subscription/Recurring" },
+    { "id": "invoice", "name": "Invoice" }
+  ],
+  "regions": [
+    { "id": "domestic", "name": "Domestic (US)" },
+    { "id": "international", "name": "International" }
+  ],
+  "todos": [
+    "International cards add 1.5% to domestic rate (2.9% + 1.5% = 4.4%)",
+    "Currency conversion adds additional 1% if applicable",
+    "ACH Direct Debit has $5 cap per transaction",
+    "In-person Terminal rate is 2.7% + 5¢",
+    "Klarna BNPL is 5.99% + 30¢"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "square",
+  "name": "Square",
+  "source_url": "https://squareup.com/us/en/pricing",
+  "last_checked": "2025-01-29",
+  "base_currency": "USD",
+  "fees": {
+    "domestic": {
+      "in_person": { "rate": 0.026, "fixed": 0.15, "type": "percentage_plus_fixed" },
+      "online": { "rate": 0.033, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "online_api": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "manual_entry": { "rate": 0.035, "fixed": 0.15, "type": "percentage_plus_fixed" },
+      "ach_invoice": { "rate": 0.01, "fixed": 1.0, "type": "percentage_plus_fixed", "cap": 10.0 },
+      "ach_api": { "rate": 0.01, "fixed": 1.0, "type": "percentage_plus_fixed", "cap": 5.0 },
+      "afterpay": { "rate": 0.06, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "cash": { "rate": 0, "fixed": 0, "type": "fixed_only" }
+    },
+    "international": {
+      "standard": { "rate": 0.033, "fixed": 0.30, "type": "percentage_plus_fixed" }
+    }
+  },
+  "transaction_types": [
+    { "id": "in-person", "name": "In-Person (Tap, Dip, Swipe)" },
+    { "id": "online", "name": "Online" },
+    { "id": "invoice", "name": "Invoice" }
+  ],
+  "regions": [
+    { "id": "domestic", "name": "Domestic (US)" },
+    { "id": "international", "name": "International (same as domestic)" }
+  ],
+  "todos": [
+    "Square has tiered pricing: Free (2.6%+15¢ in-person, 3.3%+30¢ online), Plus and Premium offer lower rates",
+    "Using Free plan rates as baseline - Plus offers 2.5%+15¢ in-person, Premium offers 2.4%+15¢",
+    "ACH invoice: 1% with $1 minimum, $10 cap (Plus/Premium)",
+    "Afterpay (BNPL): 6% + 30¢",
+    "Square Terminal and Register may have different rates"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "platform": "authorize-net",
+  "name": "Authorize.Net",
+  "source_url": "https://www.authorize.net/sign-up/pricing.html",
+  "last_checked": "2025-01-29",
+  "base_currency": "USD",
+  "fees": {
+    "domestic": {
+      "standard": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "all_in_one": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "gateway_only": { "rate": 0, "fixed": 0.10, "type": "fixed_only", "note": "Per transaction + processor fees" },
+      "echeck": { "rate": 0.035, "fixed": 0.25, "type": "percentage_plus_fixed", "note": "Estimated" }
+    },
+    "international": {
+      "standard": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed", "note": "Fees vary by card region" }
+    }
+  },
+  "transaction_types": [
+    { "id": "standard", "name": "Credit/Debit Card" },
+    { "id": "echeck", "name": "eCheck" },
+    { "id": "subscription", "name": "Recurring Billing" }
+  ],
+  "regions": [
+    { "id": "domestic", "name": "Domestic (US)" },
+    { "id": "international", "name": "International (varies)" }
+  ],
+  "todos": [
+    "All-in-One plan: $25/month + 2.9% + 30¢ per transaction",
+    "Payment Gateway only: $25/month + $0.10 per transaction (plus separate merchant account fees)",
+    "Daily batch fee: $0.10 per day",
+    "eCheck fees may vary - typically around 3.5% + $0.25",
+    "Account Updater service may have additional cost",
+    "No setup fees, no early termination fees",
+    "Custom pricing available for high volume (over $500K/year)"
+  ]
+}

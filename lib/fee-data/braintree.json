@@ -1,0 +1,40 @@
+{
+  "platform": "braintree",
+  "name": "Braintree",
+  "source_url": "https://www.braintreepayments.com/pricing",
+  "last_checked": "2025-01-29",
+  "base_currency": "USD",
+  "fees": {
+    "domestic": {
+      "standard": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "cards": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "paypal": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "venmo": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "apple_pay": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "google_pay": { "rate": 0.029, "fixed": 0.30, "type": "percentage_plus_fixed" }
+    },
+    "international": {
+      "standard": { "rate": 0.039, "fixed": 0.30, "type": "percentage_plus_fixed" },
+      "multi_currency": { "rate": 0.01, "fixed": 0, "type": "percentage_only", "note": "Additional 1% for multi-currency transactions" }
+    }
+  },
+  "transaction_types": [
+    { "id": "standard", "name": "Card Payment" },
+    { "id": "paypal", "name": "PayPal" },
+    { "id": "venmo", "name": "Venmo" },
+    { "id": "apple-pay", "name": "Apple Pay" },
+    { "id": "google-pay", "name": "Google Pay" }
+  ],
+  "regions": [
+    { "id": "domestic", "name": "Domestic (US)" },
+    { "id": "international", "name": "International" }
+  ],
+  "todos": [
+    "Braintree charges 2.9% + $0.30 per transaction after first $50K in volume",
+    "Multi-currency transactions billed an additional 1%",
+    "No monthly fees, no setup fees, no card storage fees",
+    "Chargebacks assessed $15 fee",
+    "Custom pricing available for high volume (over $80K/month)",
+    "Braintree is a PayPal company - some PayPal fees may apply"
+  ]
+}
